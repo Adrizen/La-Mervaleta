@@ -1,27 +1,55 @@
-  body {
+  body { /* Todo el cuerpo del documento */
     background-color: cornsilk;
   }
 
-  .titulo {
+  .titulo { /* div título */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
   
-  .noticias-principales{
+  .noticias-principales { /* div */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .imagen-noticia {
     text-align: center;
   }
 
-  h2 {
+  .tabla {
     text-align: center;
   }
 
+  #tablaCotizaciones { /* solo tabla cotizaciones */
+    width: 70%;
+    margin: 20px auto;
+    table-layout: auto;
+    border-style: solid;
+    font-size: large;
+  }
+
+  th, td {  /* Filas y columnas de tabla */ 
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .navbar-brand { /* div barra de navegación */
+    padding-left: 20px;
+  }
+
+  .contacto { /* div en página de contacto */
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .botonSubmit {
+    padding-top: 10px;
+  }
 

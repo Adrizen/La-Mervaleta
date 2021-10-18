@@ -12,39 +12,72 @@
     <html lang="es">
 
     <title>La Mervaleta - Noticias de economía Argentina y el mundo.</title>
+
+    <script src="script.js" defer></script>
 </head>
 
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">La Mervaleta</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="titulo">
         <img src="favicon.ico" style="max-width: 8%;max-height: 8%;">
         <h1 align="MIDDLE">La Mervaleta - Noticias de economía Argentina y el mundo.</h1>
     </div>
     <hr /> <!-- Line break. -->
 
-    <div class="noticias-principales">
-        <div class="noticia">
-            <h2>Bitcoin toca los 58.000 USD.</h2>
-            <div class="imagen-noticia">
-                <a href="noticia1.html">
-                    <img src="bitcoin.jpg" style="max-width: 80%;">
-                </a>
-            </div>
-        </div>
-        <div class="noticia">
-            <h2>Dolar blue hoy: $185.</h2>
-            <div class="imagen-noticia">
-                <a href="noticia2.html">
-                    <img src="dolares.jpg" style="max-width: 80%;">
-                </a>
-            </div>
-        </div>
+    <div class="tabla">
+        <table id="tablaCotizaciones">
+            <thead>
+                <tr style="font-style: italic;">
+                    <th>Dólar Oficial</th>
+                    <th>Dólar Blue</th>
+                    <th>Dólar Contado con Liqui</th>
+                    <th>Dólar "Solidario"</th>
+                    <th>Dólar Bolsa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="dolarOficial">---</td>
+                    <td id="dolarBlue">---</td>
+                    <td id="dolarCCL">---</td>
+                    <td id="dolarSolidario">---</td>
+                    <td id="dolarBolsa">---</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="noticia">
-        <h2></h2>
-        <h3> </h3>
-
+    <div class="noticias-principales">
+        <div class="noticia">
+            <h2>Bitcoin rompe los 61.000 USD.</h2>
+            <div class="imagen-noticia">
+                <a href="noticia1.html">
+                    <img src="bitcoin.jpg" style="max-width: 80%;" alt="Monedas doradas Bitcoin">
+                </a>
+            </div>
+        </div>
+        <div class="noticia">
+            <h2>¿Cómo ahorrar en dólares?.</h2>
+            <div class="imagen-noticia">
+                <a href="noticia2.html">
+                    <img src="dolares.jpg" style="max-width: 80%;" alt="Billetes de dolar">
+                </a>
+            </div>
+        </div>
     </div>
 
 </body>
