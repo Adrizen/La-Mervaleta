@@ -25,6 +25,7 @@ header{
 
 .tituloIcono h1 {
     align-self: flex-start;
+    text-decoration: none;
 }
 
 .tituloIcono h5 {
@@ -192,6 +193,20 @@ div.categoria h5{
    
 }
 
+.aboutUS {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.aboutUS img {
+    border-radius: 5%;
+    size: auto;
+}
+
+.aboutUS h3 {
+    text-align: center;
+}
 
 @media only screen and (max-width: 750px ){
 
@@ -230,7 +245,16 @@ div.categoria h5{
         height: 50px;
     }
 
+    .aboutUS h3{
+        padding-left: 5px;
+        font-size: 90%;
+    }
 
+    .aboutUS img {
+        width: 50%;
+        height: 50%;
+        padding-top: 100px;
+    }
 
 }
 @media only screen and (max-width: 900px) {
