@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 .items{
+    padding: 5%;
     width:80%;
     display: grid;
     margin: auto;

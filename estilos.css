@@ -146,9 +146,7 @@ img{
     justify-content: space-between;
     background-color: white;
 }
-.card img{
-    object-fit: cover;
-}
+
 .texto{ 
     text-align: center;   
     color: white;
