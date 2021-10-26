@@ -3,6 +3,7 @@
     padding: 0px;
     text-align: center;
     font-family: 'Titillium Web',sans-serif;
+
 }
 header{
     align-items: center;
@@ -77,8 +78,7 @@ header{
 #conteiner{
     margin: auto;
     width: 70%;
-    height: 100%;
-    display: block;
+    height: auto;
     padding-top: 10rem;
 }  
 
@@ -89,27 +89,14 @@ header{
 }
 
 #articulos{
-    height: 55%;
-    background-color: rgb(49, 11, 218);
-    border:2px solid rgb(7, 238, 95);  
+    height: auto;
+    padding-top:2%;
+    box-sizing: border-box;
 }
 
-#items{
-    height: 30.5%;
-    background-color: rgb(49, 11, 218);
-    border:1px solid rgb(7, 238, 95);
-    display: flex;
-    flex-wrap: wrap;  
-}
 
 #carruselFinal{
     height: 18%;
-}
-
-#volver{
-    height: 2%;
-    background-color:blue;
-    color: white;
 }
 
 footer{
@@ -132,19 +119,7 @@ img{
     object-fit:cover;
 }
 
-section{
-    width: 50%;
-    float:left;
-}
 
-aside{
-float: right;
-width: 50%;
-}
-
-#carousel-caption d-none d-md-block{
-    background-color: darkgray;
-}
 #legal{
     width: 80%;
     margin: auto;
@@ -169,6 +144,7 @@ width: 50%;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
+    background-color: white;
 }
 .card img{
     object-fit: cover;
@@ -194,22 +170,11 @@ div.categoria h5{
     width: auto;
     height: auto;
     display:  inline-block;
-    border-radius: 25px;
+    border-radius: 60px;
     margin: 1%;
     padding: 5px;
 }
-@media screen and (max-width: 900px) {
-    .items{
-        width:100%;
-        display: block;
-        padding: 20px;
-    }
-    .card{
-        min-height: 250px;
-        margin: 1px;
-        margin-top: 20px;
-    }
-}
+
 
 @media only screen and (max-width: 750px ){
 
@@ -250,4 +215,16 @@ div.categoria h5{
 
 
 
+}
+@media only screen and (max-width: 900px) {
+    .items{
+        width:100%;
+        display: block;
+        padding: 20px;
+    }
+    .card{
+        min-height: 250px;
+        margin: 1px;
+        margin-top: 20px;
+    }
 }
