@@ -1,9 +1,9 @@
 
-obtenerValorApi("https://criptoya.com/api/", "dolar", false);
-//obtenerValorApi("https://criptoya.com/api/bitex", "/btc/usd");
-obtenerValorApi("https://api.coingecko.com/api/v3/", "simple/price?ids=bitcoin%2Ccardano%2Cchainlink%2Cethereum&vs_currencies=usd", true);
+//SIPI: obtenerValorApi("https://criptoya.com/api/", "dolar", false);
+//NOPE: obtenerValorApi("https://criptoya.com/api/bitex", "/btc/usd");
+//SIPI: obtenerValorApi("https://api.coingecko.com/api/v3/", "simple/price?ids=bitcoin%2Ccardano%2Cchainlink%2Cethereum&vs_currencies=usd", true);
 
-function obtenerValorApi(url, moneda, esCripto) {
+/*function obtenerValorApi(url, moneda, esCripto) {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url + moneda);
     xhr.onload = function () {
@@ -12,9 +12,9 @@ function obtenerValorApi(url, moneda, esCripto) {
         nombreTemporal(obj, esCripto);
     }
     xhr.send();
-}
+}*/
 
-function nombreTemporal(obj, esCripto) {
+/*function nombreTemporal(obj, esCripto) {
     for (let key in obj) {
         let valor = obj[key]
         if (esCripto) {
@@ -22,5 +22,26 @@ function nombreTemporal(obj, esCripto) {
         }
         console.log(key + ": " + valor);
     }
-}
+}*/
 
+// Cargar y crear el navbar.
+fetch('nav.html')
+.then(res => res.text())
+.then(text => {
+    let oldelem = document.querySelector("script#replace_with_navbar");
+    let newelem = document.createElement("div");
+    newelem.innerHTML = text;
+    oldelem.parentNode.replaceChild(newelem,oldelem);
+})
+
+
+
+// Cargar y crear el footer.
+fetch('footer.html')
+.then(res => res.text())
+.then(text => {
+    let oldelem = document.querySelector("script#replace_with_footer");
+    let newelem = document.createElement("div");
+    newelem.innerHTML = text;
+    oldelem.parentNode.replaceChild(newelem,oldelem);
+})
