@@ -31,13 +31,11 @@ header{
 .text h1{
     flex-wrap: wrap; 
     margin: 0%;
-  
 }
 
 .navigation{
     background-color: rgb(22, 58, 106);
-    color:white;
-   
+    color:white; 
 }
 .navigation ul{
     margin: 0;
@@ -141,6 +139,8 @@ width: 50%;
     width: 80%;
     margin: auto;
 }
+
+
 @media only screen and (max-width: 750px ){
 
     .navigation{
