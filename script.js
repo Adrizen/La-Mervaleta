@@ -1,20 +1,26 @@
-// API request para obtener los distintos valores del dolar.
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://criptoya.com/api/dolar");
-xhr.onload = function () {
-    let json = xhr.responseText;
-    let obj = JSON.parse(json);
 
-    // Modifico el HTML para mostrar los valores obtenidos desde la API.
-    let dolarOficial = document.getElementById("dolarOficial");
-    dolarOficial.innerHTML = obj.oficial;
-    let dolarBlue = document.getElementById("dolarBlue");
-    dolarBlue.innerHTML = obj.blue;
-    let dolarCCL = document.getElementById("dolarCCL");
-    dolarCCL.innerHTML = obj.ccl;
-    let dolarSolidario = document.getElementById("dolarSolidario");
-    dolarSolidario.innerHTML = obj.solidario;
-    let dolarBolsa = document.getElementById("dolarBolsa");
-    dolarBolsa.innerHTML = obj.mep;
-};
-xhr.send();
+obtenerValorApi("https://criptoya.com/api/", "dolar", false);
+//obtenerValorApi("https://criptoya.com/api/bitex", "/btc/usd");
+obtenerValorApi("https://api.coingecko.com/api/v3/", "simple/price?ids=bitcoin%2Ccardano%2Cchainlink%2Cethereum&vs_currencies=usd", true);
+
+function obtenerValorApi(url, moneda, esCripto) {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", url + moneda);
+    xhr.onload = function () {
+        let json = xhr.responseText;
+        let obj = JSON.parse(json);
+        nombreTemporal(obj, esCripto);
+    }
+    xhr.send();
+}
+
+function nombreTemporal(obj, esCripto) {
+    for (let key in obj) {
+        let valor = obj[key]
+        if (esCripto) {
+            valor = valor.usd;
+        }
+        console.log(key + ": " + valor);
+    }
+}
+
