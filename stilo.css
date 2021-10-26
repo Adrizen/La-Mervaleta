@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Titillium Web',sans-serif;
+}
+img{
+    width: 100%;
+    margin: 5%;
+   
+}
+div.lobo{
+    display: flex;
+    margin:5%;
+    width: 90%;
+    background-color:rgb(21, 200, 200);
+
+}
+
+div.texto{
+    margin: 5px;
+    position:absolute;
+    width: 70%;
+    bottom: 15%;
+    right: 16px;
+    color:white;
+    text-align: center;
+    background-color:rgba(17, 17, 17, 0.7);
+    transform: translate(-20%,30%);
+    border-radius: 20px;
+    padding: 5px;
+}
+div img{
+    object-fit:cover;
+    border-radius: 20px;
+    padding: auto;
+}
+
+div{
+    width: auto;
+    position: relative;
+    object-fit:cover;
+}
+  @media only screen and (max-width: 750px ){
+    .texto p {
+        display: none;
+   
+      }
+
+
+
+  }
