@@ -131,6 +131,14 @@ p{
     gap:30px;
     
 }
+.itemsTriple{
+    width:70%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    
+}
 
 .articulo{
     border-radius: 20px;
@@ -145,8 +153,6 @@ p{
     display: flex;
     flex-direction:column;
     justify-content: space-between;
-
-    
 }
 
 .cuerpo{ 
