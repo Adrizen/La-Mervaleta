@@ -15,7 +15,6 @@ div.presentacion{
     margin: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 90px;
-    background-color:blueviolet;
 }
 div.text{
   
@@ -23,11 +22,19 @@ div.text{
 
 }
 div.img{
-    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    border: 1px solid red;
     background-size: cover;
     border-radius: 25px;
+    height: 100%;
+    width: 100% ;
+
 }
 @media only screen and (max-width: 900px) {
-
+    div.presentacion{
+        display:block;
+    }
 
 }
