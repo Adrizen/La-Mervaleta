@@ -3,26 +3,28 @@
 //NOPE: obtenerValorApi("https://criptoya.com/api/bitex", "/btc/usd");
 //SIPI: obtenerValorApi("https://api.coingecko.com/api/v3/", "simple/price?ids=bitcoin%2Ccardano%2Cchainlink%2Cethereum&vs_currencies=usd", true);
 
-/*function obtenerValorApi(url, moneda, esCripto) {
+function obtenerValorApi(url, moneda, esCripto) {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url + moneda);
     xhr.onload = function () {
         let json = xhr.responseText;
         let obj = JSON.parse(json);
-        nombreTemporal(obj, esCripto);
+        showValuesConsole(obj, esCripto);
     }
     xhr.send();
-}*/
+}
 
-/*function nombreTemporal(obj, esCripto) {
+function showValuesConsole(obj, esCripto) {
     for (let key in obj) {
         let valor = obj[key]
-        if (esCripto) {
+        if (esCripto) { // Si es cripto obtengo el valor a dolarucos primero.
             valor = valor.usd;
         }
         console.log(key + ": " + valor);
     }
-}*/
+}
+
+
 
 // Cargar y crear el navbar.
 fetch('nav.html')
