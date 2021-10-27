@@ -231,7 +231,7 @@ div.categoria h5{
     justify-content: center;
     flex-direction: row;
     gap: 2%;
-    padding-top: 3%;
+    padding-top: 10%;
 }
 
 .cotizacion {
