@@ -49,5 +49,8 @@ div.img{
         display:block;
     }
     
+    hr{
+        margin:auto;
+        width:80%;}
 
 }
