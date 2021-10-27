@@ -94,11 +94,12 @@ header{
 
 #articulos{
     padding-top:2%;
-    
 }
 
 #carruselFinal{
     height: 18%;
+    margin: auto;
+    padding-bottom: 2%;
 }
 
 footer{
@@ -183,16 +184,18 @@ p{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    
 }
 
 div.categoria h5{
+    font-weight: bold;
     font-size: 13.28px;
     color: rgb(255, 255, 255);
     background-color:rgb(47, 50, 53,0.7);
     display: inline-block;
     border-radius: 25px;
     margin: 1%;
-    padding: 2%;
+    padding: 1%;
 
 }
 
@@ -217,6 +220,9 @@ div.categoria h5{
 
 .aboutUS h3 {
     text-align: center;
+}
+#carouselExampleDark{
+    border-radius: 25%;
 }
 
 #contenedorCotizaciones {
