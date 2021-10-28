@@ -333,8 +333,6 @@ div.categoria h5{
         padding-top: 100px;
     }
 
-}
-@media only screen and (max-width: 900px) {
     .navigation{
         display: none;
     }
@@ -385,6 +383,5 @@ div.categoria h5{
         text-align: right;
         padding: 20;
     }
-    
-    
 }
+    
