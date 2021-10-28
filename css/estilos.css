@@ -336,16 +336,22 @@ div.categoria h5{
         grid-gap: 20px;
         height: 250px;
         display: block;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
     }
-
+    #articulos{
+        margin :auto;
+    }
     #contenedorCotizaciones {
         flex-direction: column;
     }
     #carruselInicio{
        
-        height:150px;
+        height:auto;
         width:90%;
         margin:auto;
+        margin-bottom: 20px;
     }
     .tituloIcono img{
         width:50px;

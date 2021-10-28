@@ -119,17 +119,30 @@ padding: 4px;
     
     tr{
         margin:auto;
-        width:80%;}
+        width:100%;
+    }
    
     .datatable-container .datatable{
-            width: 100px;
-            margin:5px;
+            width: 300px;
+            margin:auto;
     }
+        
     .textoTitulo h1 {
         font-size: 18px;
     }
     .textoTitulo h4 {
         font-size: 13px;
     }
+    .datatable-container .datatable, 
+    .datatable-container .datatable th,
+    .datatable-container .datatable td{
+    padding: 0px;
+    font-size: 16px;
+    }
+    .centro{
+        height: 600px;
+        
+    }
+
 
 }
