@@ -107,8 +107,24 @@ padding: 4px;
   
 }
 
+.nav__input:checked + .nav__menu{
+    background: tomato;
+}
+.nav__menu{
+    height: 500px;
+    width: 500px;
+    background:black;
+}
+
+
 
 @media only screen and (max-width: 900px) {
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: red;
+    }
     div.presentacion{
         display:block;
     }

@@ -19,9 +19,11 @@ header{
 }
 
 .tituloIcono {
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
 }
 
 .tituloIcono h1 {
@@ -37,9 +39,17 @@ header{
     width: 79px;
     height: 79px;
 }
+.icono{
+    margin-right:900px;
+    border: 1px solid red;
+}
+.textoTitulo{
+    margin:auto;
+}
 
 .menu-icon{
-    display: none; 
+    display: none;
+   
 }
 .text h1{
     flex-wrap: wrap; 
@@ -276,13 +286,18 @@ div.categoria h5{
     }
     .navigation ul li a{
         display: block;
-      
+
         transition: all 0.4s linear;
         border-radius: 10px;
         font-weight: bold;
     }
     .navigation ul li a:hover{
-        background-color: rgb(37, 72, 121);
+        background-color: rgb(27, 94, 187);
+        opacity: 0.9;
+        color: white;
+    }
+    .navigation ul li a:hover{
+        background-color: rgb(209, 24, 0);
         opacity: 0.9;
         color: white;
     }
@@ -320,7 +335,9 @@ div.categoria h5{
 
 }
 @media only screen and (max-width: 900px) {
-
+    .navigation{
+        display: none;
+    }
     .items{
         width:100%;
         display: block;
@@ -353,13 +370,14 @@ div.categoria h5{
         margin:auto;
         margin-bottom: 20px;
     }
-    .tituloIcono img{
-        width:50px;
-        margin-right: 50px;
-        
-    }
+ 
     .text{
         margin:3%;
+    }
+    .textoTitulo{
+        margin:0%;
+        display: block;
+        width:200px;
     }
     .menuvolver{
         width: 5px;
