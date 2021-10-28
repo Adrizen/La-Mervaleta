@@ -20,6 +20,6 @@ function concatenarValores(obj, esCripto) {
             valor = valor.usd;
         }
         var elemento = document.getElementById(key);
-        elemento.innerHTML += `<h2 id="${key}"> ${valor}</h2>`
+        elemento.innerHTML += `<td id="${key}"> ${valor}</td>`
     }
 }
