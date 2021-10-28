@@ -1,5 +1,5 @@
 // Cargar y crear el footer.
-fetch('footer.html')
+fetch('/onavhtml/footer.html')
     .then(res => res.text())
     .then(text => {
         let oldelem = document.querySelector("script#replace_with_footer");

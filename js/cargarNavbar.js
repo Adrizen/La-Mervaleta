@@ -1,5 +1,5 @@
 // Cargar y crear el navbar.
-fetch('nav.html')
+fetch('/onavhtml/nav.html')
     .then(res => res.text())
     .then(text => {
         let oldelem = document.querySelector("script#replace_with_navbar");
