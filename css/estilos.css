@@ -87,9 +87,11 @@ header{
 }  
 
 #carruselInicio{
-    height:25%;
-    background-color:rgb(235, 14, 14);
-    display: block;
+    min-height:500px;
+    height: auto;
+    background-size: cover;
+    display: cover;
+    border-radius: 40px;
 }
 
 #articulos{
@@ -124,6 +126,7 @@ p{
 #legal{
     width: 80%;
     margin: auto;
+    text-align: justify;
 }
 .items{
     width:100%;
@@ -173,8 +176,7 @@ p{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    
-
+    padding: 2px;
 
 }
 .cuerpo h2{
@@ -184,7 +186,8 @@ p{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    
+    padding: 4px;
+    text-align: center;
 }
 
 div.categoria h5{
@@ -252,6 +255,9 @@ div.categoria h5{
     display: flex;
     
 }
+.link{
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 750px ){
 
@@ -317,6 +323,9 @@ div.categoria h5{
 
     #contenedorCotizaciones {
         flex-direction: column;
+    }
+    #carruselInicio{
+        min-height:300px;
     }
     
 }
