@@ -55,11 +55,14 @@ div.img{
     display: flex;
 }
 .centroInterno{
-   
+
     min-height: 600px;
-   
+    text-align: center;
     margin: auto;
     color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 :root{
     --primary-color:white;
@@ -70,18 +73,20 @@ div.img{
     background-color: var(--secondary-color);
     border-radius: 20px;
     color:white;
-    width: 500px;
-    margin:auto;
+    width: auto;
     font-size: 18px;
+    border-collapse: collapse;
+    
 }
 .datatable{
     border-collapse: collapse;
-    margin:0;
+    margin: 5px;
+    width: 100%;
+    font-size: 20px;
 }
 .datatable-container .datatable{
-
-    width: 100%;
-    
+    width: 500px;
+    margin:5px;
 }
 .datatable-container .datatable, 
 .datatable-container .datatable th,
@@ -91,13 +96,12 @@ padding: 4px;
 .datatable-container .datatable th{
     font-weight: bold;
     text-align: center;
-    border-bottom: 1px solid rgb(52, 52, 53);;
-}
-
-
-.datatable-container .datatable td{
+    border-bottom: 1px solid rgb(52, 52, 53);
     
 }
+
+
+
 .datatable-container .datatable tr:nth-child(even){
     background-color: rgb(52, 52, 53);
   
@@ -108,9 +112,24 @@ padding: 4px;
     div.presentacion{
         display:block;
     }
+    header{
+        font-size: 12px;
+        
+    }
     
-    hr{
+    tr{
         margin:auto;
         width:80%;}
+   
+    .datatable-container .datatable{
+            width: 100px;
+            margin:5px;
+    }
+    .textoTitulo h1 {
+        font-size: 18px;
+    }
+    .textoTitulo h4 {
+        font-size: 13px;
+    }
 
 }

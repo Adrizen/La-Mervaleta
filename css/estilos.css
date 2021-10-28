@@ -292,6 +292,9 @@ div.categoria h5{
 
     .menu-icon{
         display:block;
+        margin: 0;
+        text-align: right;
+        
     }
     .text h1{
         font-size: 10;
@@ -301,10 +304,12 @@ div.categoria h5{
         width: 50px;
         height: 50px;
     }
+    
 
     .aboutUS h3{
-        padding-left: 5px;
+        padding-left: 3px;
         font-size: 90%;
+       
     }
 
     .aboutUS img {
@@ -337,7 +342,25 @@ div.categoria h5{
         flex-direction: column;
     }
     #carruselInicio{
-        min-height:300px;
+       
+        height:150px;
+        width:90%;
+        margin:auto;
     }
+    .tituloIcono img{
+        width:50px;
+        margin-right: 50px;
+        
+    }
+    .text{
+        margin:3%;
+    }
+    .menuvolver{
+        width: 5px;
+        margin:10px;
+        text-align: right;
+        padding: 20;
+    }
+    
     
 }
