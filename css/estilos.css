@@ -78,6 +78,7 @@ header{
 }
 
 #conteiner{
+    margin-top;15px
     overflow: hidden;
     margin: auto;
     width: 70%;
@@ -87,11 +88,14 @@ header{
 }  
 
 #carruselInicio{
+    margin-top:15px;
+    margin-bottom:15px;
     min-height:500px;
     height: auto;
     background-size: cover;
     display: cover;
-    border-radius: 40px;
+    border-radius: 25px;
+
 }
 
 #articulos{
@@ -100,7 +104,8 @@ header{
 
 #carruselFinal{
     height: 18%;
-    margin: auto;
+    margin-top:15px;
+    margin-bottom:15px;
     padding-bottom: 2%;
 }
 
@@ -110,6 +115,7 @@ footer{
     color:white;
     height: auto;
     width: 100%;
+    margin-top: 15px;
     
 }
 
@@ -137,7 +143,7 @@ p{
     
 }
 .itemsTriple{
-    width:70%;
+    width:100%;
     display: grid;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
@@ -315,10 +321,16 @@ div.categoria h5{
         display: block;
         padding: 20px;
     }
+    .itemsTriple{
+        width:100%;
+        display: block;
+        padding: 20px;
+    }
     .articulo{
         margin-top: 20px;
         grid-gap: 20px;
         height: 250px;
+        display: block;
     }
 
     #contenedorCotizaciones {
