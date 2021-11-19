@@ -116,7 +116,10 @@ padding: 4px;
     background:black;
 }
 
-
+.paginacion{
+    display:flex;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 900px) {
     .nav__menu{
