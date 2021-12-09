@@ -1,24 +1,8 @@
 const { Router } = require('express');
 const router = Router();
-let dolar, acciones, crypto;
+let dolar, acciones, crypto, noticiasNacionales, noticiasInternacionales;
 
-function resolveAfter2Seconds(x) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(x);
-        }, 2000);
-    });
-}
 
-async function add1(x) {
-    const a = await resolveAfter2Seconds(20);
-    const b = await resolveAfter2Seconds(30);
-    return x + a + b;
-}
-
-add1(10).then(v => {
-    console.log(v);  // prints 60 after 4 seconds.
-});
 
 // --------------- Crypto -----------------
 
@@ -83,6 +67,15 @@ router.post('/dolar', (req, res) => {
 // ------------- Acciones-------------
 
 router.get('/acciones', (req, res) => {
+    res.status(200).send(acciones)
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('resuelto');
+        }, 100);
+    })
+})
+
+router.get('/acciones', (req, res) => {
     let from = req.query.from;          // Inicio.
     let cantidad = req.query.cantidad;  // Fin.
     var longitud = Object.keys(acciones).length;    // Cantidad de acciones.
@@ -106,7 +99,45 @@ router.post('/acciones', (req, res) => {
     acciones = req.body;
     res.status(200).send({ mensaje: "Valores acciones recibidos exitosamente." })
 });
+ 
+// ------------- Noticias Nacionales -------------
 
+// Obtener todas las noticias nacionales.
+router.get('/noticias/nacionales', (req, res) => {
+    res.status(200).send(noticiasNacionales)
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('resuelto');
+        }, 100);
+    })
+})
 
+// Crear las noticias nacionales.
+router.post('/noticias/nacionales', (req, res) => {
+    noticiasNacionales = req.body    // Guardo en una variable el JSON de entrada.
+    // Status 200 y se informa la recepción de los valores de noticias.
+    res.status(200).send({ mensaje: "Noticias nacionales recibidas exitosamente." })
+    //console.log(noticiasNacionales)
+});
+
+// ------------- Noticias Internacionales -------------
+
+// Obtener todas las noticias internacionales.
+router.get('/noticias/internacionales', (req, res) => {
+    res.status(200).send(noticiasInternacionales)
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('resuelto');
+        }, 100);
+    })
+})
+
+// Crear las noticias internacionales.
+router.post('/noticias/internacionales', (req, res) => {
+    noticiasInternacionales = req.body    // Guardo en una variable el JSON de entrada.
+    // Status 200 y se informa la recepción de los valores de noticias.
+    res.status(200).send({ mensaje: "Noticias internacionales recibidas exitosamente." })
+    //console.log(noticiasInternacionales)
+});
 
 module.exports = router;
