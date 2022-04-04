@@ -4,5 +4,5 @@ La Mervaleta es la mejor web para estar al tanto de todas las novedades económi
 
 📸 Imágenes:
 
-<img src="public\img\lamervaleta2.png" height="38%" width="38%" >
-<img src="public\img\lamervaleta3.png" height="35%" width="35%" >
+<img src="public\img\lamervaleta2.png" height="50%" width="50%" >
+<img src="public\img\lamervaleta3.png" height="50%" width="50%" >
